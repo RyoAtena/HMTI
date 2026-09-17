@@ -61,7 +61,9 @@
   --shadow-glow: 0 0 25px rgba(59, 130, 246, 0.3);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -97,7 +99,9 @@ img {
   display: block;
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   font-family: inherit;
   font-size: inherit;
 }
@@ -301,6 +305,7 @@ button, input, textarea {
 .theme-toggle .sun-icon {
   display: none;
 }
+
 .theme-toggle .moon-icon {
   display: block;
 }
@@ -309,6 +314,7 @@ button, input, textarea {
   display: block;
   color: #f59e0b;
 }
+
 [data-theme="dark"] .theme-toggle .moon-icon {
   display: none;
 }
@@ -464,9 +470,18 @@ button, input, textarea {
   height: 12px;
   border-radius: 50%;
 }
-.dot-red { background-color: #ef4444; }
-.dot-yellow { background-color: #f59e0b; }
-.dot-green { background-color: #10b981; }
+
+.dot-red {
+  background-color: #ef4444;
+}
+
+.dot-yellow {
+  background-color: #f59e0b;
+}
+
+.dot-green {
+  background-color: #10b981;
+}
 
 .code-block {
   font-family: var(--font-code);
@@ -478,8 +493,13 @@ button, input, textarea {
   line-height: 1.5;
 }
 
-.code-block .keyword { color: #ec4899; }
-.code-block .string { color: #10b981; }
+.code-block .keyword {
+  color: #ec4899;
+}
+
+.code-block .string {
+  color: #10b981;
+}
 
 .floating-badge {
   position: absolute;
@@ -509,8 +529,15 @@ button, input, textarea {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 .iptek-overview-banner {
@@ -617,8 +644,13 @@ button, input, textarea {
   letter-spacing: 0.5px;
 }
 
-.dept-card-software .dept-title-area span { color: var(--accent-software); }
-.dept-card-hardware .dept-title-area span { color: var(--accent-hardware); }
+.dept-card-software .dept-title-area span {
+  color: var(--accent-software);
+}
+
+.dept-card-hardware .dept-title-area span {
+  color: var(--accent-hardware);
+}
 
 .dept-description {
   color: var(--text-secondary);
@@ -656,8 +688,13 @@ button, input, textarea {
   transition: var(--transition);
 }
 
-.dept-card-software .skill-item i { color: var(--accent-software); }
-.dept-card-hardware .skill-item i { color: var(--accent-hardware); }
+.dept-card-software .skill-item i {
+  color: var(--accent-software);
+}
+
+.dept-card-hardware .skill-item i {
+  color: var(--accent-hardware);
+}
 
 .skill-item:hover {
   background-color: var(--bg-card-hover);
@@ -1039,7 +1076,7 @@ button, input, textarea {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 3rem;
   margin-bottom: 3rem;
 }
@@ -1073,6 +1110,31 @@ button, input, textarea {
 .footer-links a:hover {
   color: var(--accent-primary);
   transform: translateX(4px);
+}
+
+.social-links {
+  display: flex;
+  gap: 0.85rem;
+}
+
+.social-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.social-btn:hover {
+  background-color: var(--accent-primary);
+  color: var(--text-white);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
 }
 
 .footer-bottom {

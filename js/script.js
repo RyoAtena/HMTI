@@ -4,7 +4,7 @@ const activitiesData = [
     title: "Workshop Web Development",
     category: "Software",
     date: "25 Oktober 2026",
-    location: "Lab Komputer 3, Gedung Dekanat",
+    location: "Gedung D 3 N",
     description: "Pelatihan hands-on membangun website modern responsive menggunakan HTML5, CSS3, dan Vanilla JavaScript untuk mahasiswa tingkat pertama dan kedua.",
     icon: "fa-code"
   },
@@ -13,7 +13,7 @@ const activitiesData = [
     title: "Basic Networking & Cisco Fundamentals",
     category: "Hardware",
     date: "12 November 2026",
-    location: "Lab Jaringan Informatika",
+    location: "Gedung D 3 N",
     description: "Sesi kumpul teknis mempelajari IP Addressing, Subnetting, konfigurasi Router/Switch Cisco, dan simulasi jaringan komputer.",
     icon: "fa-network-wired"
   },
@@ -22,7 +22,7 @@ const activitiesData = [
     title: "Introduction to Git & GitHub",
     category: "Software",
     date: "05 Desember 2026",
-    location: "Ruang Seminar Informatika",
+    location: "Gedung D 3 N",
     description: "Memahami sistem version control Git, alur kerja kolaborasi proyek open-source, branching, dan pengelolaan repositori GitHub.",
     icon: "fa-code-branch"
   },
@@ -31,7 +31,7 @@ const activitiesData = [
     title: "Hardware Assembly & Troubleshooting Session",
     category: "Hardware",
     date: "18 Desember 2026",
-    location: "Workshop IPTEK HMTI",
+    location: "Gedung D 3 N",
     description: "Praktik langsung merakit komponen PC desktop, pengujian kompatibilitas spesifikasi, serta penanganan masalah (troubleshooting) perangkat keras.",
     icon: "fa-microchip"
   }
@@ -209,7 +209,7 @@ function renderActivities(items) {
   container.innerHTML = items.map(activity => {
     const isSoftware = activity.category.toLowerCase() === "software";
     const badgeClass = isSoftware ? "software" : "hardware";
-    
+
     return `
       <article class="activity-card" data-id="${activity.id}">
         <div class="activity-top">
@@ -234,15 +234,15 @@ function renderActivities(items) {
 function initActivityFilters() {
   const filterBtns = document.querySelectorAll(".filter-btn");
   const searchInput = document.getElementById("activitySearch");
-  
+
   let currentCategory = "all";
   let currentSearchQuery = "";
 
   function applyFilters() {
     const filtered = activitiesData.filter(item => {
       const matchCategory = currentCategory === "all" || item.category.toLowerCase() === currentCategory;
-      const matchSearch = item.title.toLowerCase().includes(currentSearchQuery) || 
-                          item.description.toLowerCase().includes(currentSearchQuery);
+      const matchSearch = item.title.toLowerCase().includes(currentSearchQuery) ||
+        item.description.toLowerCase().includes(currentSearchQuery);
       return matchCategory && matchSearch;
     });
     renderActivities(filtered);
