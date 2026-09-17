@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMTI Digital Hub — Explore Technology, Build Your Future</title>
+  
+  <meta name="description" content="HMTI Digital Hub - Pusat Informasi Digital Mahasiswa Teknik Informatika & Departemen IPTEK HMTI. Pengembangan skill Software Development & Hardware Networking.">
+  <meta name="keywords" content="HMTI, Teknik Informatika, IPTEK, Software Development, Hardware, Web Development, Mahasiswa Informatika">
+  <meta name="author" content="Departemen IPTEK HMTI">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#home" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="logo-text">HMTI <span>Hub</span></div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#iptek" class="nav-link">IPTEK</a></li>
+          <li><a href="#kegiatan" class="nav-link">Kegiatan</a></li>
+          <li><a href="#artikel" class="nav-link">Artikel</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon moon-icon"></i>
+            <i class="fa-solid fa-sun sun-icon"></i>
+          </button>
+          
+          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Mobile Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="fa-solid fa-microchip"></i> Departemen IPTEK HMTI
+            </div>
+            <h1 class="hero-title">
+              HMTI Digital Hub — <span class="gradient-text">Explore Technology, Build Your Future</span>
+            </h1>
+            <p class="hero-description">
+              Pusat inovasi dan pembelajaran digital mahasiswa Teknik Informatika. Wadah eksplorasi pengembangan kemampuan teknikal di bidang <strong>Software Engineering</strong> dan <strong>Hardware Infrastructure</strong>.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#iptek" class="btn btn-primary">
+                Explore IPTEK <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#kegiatan" class="btn btn-secondary">
+                Lihat Kegiatan <i class="fa-solid fa-calendar-days"></i>
+              </a>
+            </div>
+
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="highlight-text">
+                  <h4>Software Dev</h4>
+                  <p>Web & Apps</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="highlight-text">
+                  <h4>Hardware</h4>
+                  <p>Network & PC</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="highlight-text">
+                  <h4>Learning</h4>
+                  <p>Workshop & Study</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-card-stack">
+              <div class="tech-card-main">
+                <div class="card-code-header">
+                  <span class="code-dot dot-red"></span>
+                  <span class="code-dot dot-yellow"></span>
+                  <span class="code-dot dot-green"></span>
+                </div>
+                <div class="code-block">
+                  <p><span class="keyword">const</span> IPTEK = {</p>
+                  <p>&nbsp;&nbsp;department: <span class="string">"HMTI Digital Hub"</span>,</p>
+                  <p>&nbsp;&nbsp;focus: [<span class="string">"Software"</span>, <span class="string">"Hardware"</span>],</p>
+                  <p>&nbsp;&nbsp;mission: <span class="string">"Empower Students"</span></p>
+                  <p>};</p>
+                  <p><span class="keyword">console</span>.log(IPTEK.mission);</p>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-software">
+                <i class="fa-solid fa-code" style="color: var(--accent-software);"></i>
+                <span>Software Dev</span>
+              </div>
+              <div class="floating-badge badge-hardware">
+                <i class="fa-solid fa-microchip" style="color: var(--accent-hardware);"></i>
+                <span>Hardware & Net</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="iptek-overview-banner">
+          <h3><i class="fa-solid fa-circle-info" style="color: var(--accent-primary);"></i> Tentang IPTEK HMTI</h3>
+          <p>
+            Departemen IPTEK berfokus pada pengembangan kemampuan teknikal mahasiswa di bidang software dan hardware melalui pelatihan berkala, workshop interaktif, dan kolaborasi proyek akademik maupun organisasi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="iptek">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Bidang Keahlian</span>
+          <h2 class="section-title">Departemen IPTEK</h2>
+          <p class="section-subtitle">
+            Mengenal dua divisi spesialisasi utama dalam Departemen IPTEK yang mendukung perkembangan technical skill mahasiswa Informatika.
+          </p>
+        </div>
+
+        <div class="iptek-grid">
+          <div class="dept-card dept-card-software">
+            <div class="dept-header">
+              <div class="dept-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="dept-title-area">
+                <span>Divisi 01</span>
+                <h3>Departemen Software</h3>
+              </div>
+            </div>
+
+            <p class="dept-description">
+              Berfokus pada pengembangan aplikasi dan solusi berbasis perangkat lunak untuk mendukung kebutuhan akademik dan organisasi.
+            </p>
+
+            <h4 class="skills-list-title">Daftar Kemampuan & Fokus:</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fa-solid fa-globe"></i>
+                <span>Web Development</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span>Application Dev</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-terminal"></i>
+                <span>Programming</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-cubes"></i>
+                <span>Software Solution</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dept-card dept-card-hardware">
+            <div class="dept-header">
+              <div class="dept-icon">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div class="dept-title-area">
+                <span>Divisi 02</span>
+                <h3>Departemen Hardware</h3>
+              </div>
+            </div>
+
+            <p class="dept-description">
+              Berfokus pada perakitan, konfigurasi jaringan, troubleshooting, dan pengembangan sistem infrastruktur teknologi.
+            </p>
+
+            <h4 class="skills-list-title">Daftar Kemampuan & Fokus:</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fa-solid fa-desktop"></i>
+                <span>Computer Assembly</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>Network Config</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-wrench"></i>
+                <span>Troubleshooting</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-server"></i>
+                <span>System Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="kegiatan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Program Kerja</span>
+          <h2 class="section-title">Kegiatan IPTEK</h2>
+          <p class="section-subtitle">
+            Jadwal workshop, pelatihan teknis, dan agenda rutin yang diselenggarakan oleh Departemen IPTEK HMTI.
+          </p>
+        </div>
+
+        <div class="activities-controls">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">Semua Kegiatan</button>
+            <button class="filter-btn" data-category="software">Software</button>
+            <button class="filter-btn" data-category="hardware">Hardware</button>
+          </div>
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="activitySearch" placeholder="Cari nama kegiatan..." aria-label="Cari kegiatan">
+          </div>
+        </div>
+
+        <div class="activities-grid" id="activitiesGrid">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="artikel">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Edukasi & Insight</span>
+          <h2 class="section-title">Artikel Informatika</h2>
+          <p class="section-subtitle">
+            Kumpulan wawasan teknologi, tutorial dasar, dan panduan teknis yang disusun untuk mahasiswa Informatika.
+          </p>
+        </div>
+
+        <div class="articles-grid" id="articlesGrid">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal-overlay" id="articleModal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Tutup Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalBodyContent">
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom: 0.5rem;">
+            <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="logo-text">HMTI <span>Hub</span></div>
+          </div>
+          <p>
+            HMTI Digital Hub — Platform integrasi informasi digital dan pengembangan keahlian teknologi mahasiswa Teknik Informatika HMTI.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigasi Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#iptek">Departemen IPTEK</a></li>
+            <li><a href="#kegiatan">Kegiatan IPTEK</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Media Sosial</h4>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Departemen IPTEK HMTI. Created with HTML5, CSS3 & Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
